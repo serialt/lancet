@@ -5,7 +5,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/v2/internal"
 )
 
 func TestContain(t *testing.T) {

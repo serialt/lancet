@@ -6,7 +6,7 @@ fileutil 包支持文件基本操作。
 
 ## 源码:
 
--   [https://github.com/duke-git/lancet/blob/main/fileutil/file.go](https://github.com/duke-git/lancet/blob/main/fileutil/file.go)
+-   [https://github.com/serialt/lancet/blob/main/fileutil/file.go](https://github.com/serialt/lancet/blob/main/fileutil/file.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ fileutil 包支持文件基本操作。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 ```
 
@@ -59,7 +59,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -87,7 +87,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -113,7 +113,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -139,7 +139,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -167,7 +167,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -197,7 +197,7 @@ package main
 import (
     "fmt"
     "os"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -227,7 +227,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -254,7 +254,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -280,7 +280,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -309,7 +309,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -335,7 +335,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -364,7 +364,7 @@ package main
 import (
     "fmt"
     "os"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -397,7 +397,7 @@ package main
 import (
     "fmt"
     "os"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -430,7 +430,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {
@@ -458,7 +458,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/fileutil"
+    "github.com/serialt/lancet/v2/fileutil"
 )
 
 func main() {

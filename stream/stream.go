@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"encoding/gob"
 
-	"github.com/duke-git/lancet/v2/slice"
+	"github.com/serialt/lancet/v2/slice"
 	"golang.org/x/exp/constraints"
 )
 

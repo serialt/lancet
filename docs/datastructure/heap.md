@@ -5,7 +5,7 @@ Heap is a binary heap tree implemented by slice.
 
 ## Source
 
-- [https://github.com/duke-git/lancet/blob/main/datastructure/heap/maxheap.go](https://github.com/duke-git/lancet/blob/main/datastructure/heap/maxheap.go)
+- [https://github.com/serialt/lancet/blob/main/datastructure/heap/maxheap.go](https://github.com/serialt/lancet/blob/main/datastructure/heap/maxheap.go)
 
 
 <div STYLE="page-break-after: always;"></div>
@@ -13,7 +13,7 @@ Heap is a binary heap tree implemented by slice.
 ## Usage
 ```go
 import (
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 ```
 
@@ -55,7 +55,7 @@ package main
 
 import (
     "fmt"
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 
 type intComparator struct{}
@@ -96,7 +96,7 @@ package main
 
 import (
     "fmt"
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 
 type intComparator struct{}
@@ -143,7 +143,7 @@ package main
 
 import (
     "fmt"
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 
 type intComparator struct{}
@@ -191,7 +191,7 @@ package main
 
 import (
     "fmt"
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 
 type intComparator struct{}
@@ -239,7 +239,7 @@ package main
 
 import (
     "fmt"
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 
 type intComparator struct{}
@@ -284,7 +284,7 @@ package main
 
 import (
     "fmt"
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 
 type intComparator struct{}
@@ -330,7 +330,7 @@ package main
 
 import (
     "fmt"
-    heap "github.com/duke-git/lancet/v2/datastructure/heap"
+    heap "github.com/serialt/lancet/v2/datastructure/heap"
 )
 
 type intComparator struct{}

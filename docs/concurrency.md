@@ -5,14 +5,14 @@ Package concurrency contain some functions to support concurrent programming. eg
 
 ## Source:
 
-- [https://github.com/duke-git/lancet/blob/main/concurrency/channel.go](https://github.com/duke-git/lancet/blob/main/concurrency/channel.go)
+- [https://github.com/serialt/lancet/blob/main/concurrency/channel.go](https://github.com/serialt/lancet/blob/main/concurrency/channel.go)
 
 <div STYLE="page-break-after: always;"></div>
 
 ## Usage:
 ```go
 import (
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 ```
 
@@ -53,7 +53,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -78,7 +78,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -130,7 +130,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -169,7 +169,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -208,7 +208,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -246,7 +246,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -288,7 +288,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -331,7 +331,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -369,7 +369,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {
@@ -415,7 +415,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/duke-git/lancet/v2/concurrency"
+    "github.com/serialt/lancet/v2/concurrency"
 )
 
 func main() {

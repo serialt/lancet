@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/duke-git/lancet/v2/slice"
+	"github.com/serialt/lancet/v2/slice"
 )
 
 // HttpGet send get http request.

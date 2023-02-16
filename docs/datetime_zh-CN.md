@@ -5,14 +5,14 @@ datetime日期时间处理包，格式化日期，比较日期。
 
 ## 源码:
 
-- [https://github.com/duke-git/lancet/blob/main/datetime/datetime.go](https://github.com/duke-git/lancet/blob/main/datetime/datetime.go)
+- [https://github.com/serialt/lancet/blob/main/datetime/datetime.go](https://github.com/serialt/lancet/blob/main/datetime/datetime.go)
 
 <div STYLE="page-break-after: always;"></div>
 
 ## 用法:
 ```go
 import (
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 ```
 
@@ -94,7 +94,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -133,7 +133,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -172,7 +172,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -211,7 +211,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -243,7 +243,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -275,7 +275,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -307,7 +307,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -339,7 +339,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -371,7 +371,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -403,7 +403,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -435,7 +435,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -467,7 +467,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -499,7 +499,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -531,7 +531,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -563,7 +563,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -595,7 +595,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -627,7 +627,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -659,7 +659,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -691,7 +691,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -723,7 +723,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -755,7 +755,7 @@ package main
 import (
     "fmt"
     "time"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -793,7 +793,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -832,7 +832,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -864,7 +864,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -896,7 +896,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -928,7 +928,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -957,7 +957,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -986,7 +986,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -1015,7 +1015,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {
@@ -1045,7 +1045,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/datetime"
+    "github.com/serialt/lancet/v2/datetime"
 )
 
 func main() {

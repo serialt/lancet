@@ -5,14 +5,14 @@ condition包含一些用于条件判断的函数。这个包的实现参考了ca
 
 ## 源码:
 
-- [https://github.com/duke-git/lancet/blob/main/condition/condition.go](https://github.com/duke-git/lancet/blob/main/condition/condition.go)
+- [https://github.com/serialt/lancet/blob/main/condition/condition.go](https://github.com/serialt/lancet/blob/main/condition/condition.go)
 
 <div STYLE="page-break-after: always;"></div>
 
 ## 用法:
 ```go
 import (
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 ```
 
@@ -52,7 +52,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {
@@ -116,7 +116,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {
@@ -142,7 +142,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {
@@ -168,7 +168,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {
@@ -194,7 +194,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {
@@ -220,7 +220,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {
@@ -246,7 +246,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {
@@ -272,7 +272,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/v2/condition"
 )
 
 func main() {

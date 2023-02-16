@@ -6,7 +6,7 @@ maputil 包包括一些操作 map 的函数。
 
 ## 源码:
 
--   [https://github.com/duke-git/lancet/blob/main/maputil/map.go](https://github.com/duke-git/lancet/blob/main/maputil/map.go)
+-   [https://github.com/serialt/lancet/blob/main/maputil/map.go](https://github.com/serialt/lancet/blob/main/maputil/map.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ maputil 包包括一些操作 map 的函数。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 ```
 
@@ -52,7 +52,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -93,7 +93,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -138,7 +138,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -193,7 +193,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -232,7 +232,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -271,7 +271,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -313,7 +313,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -350,7 +350,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package datastructure
 import (
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/v2/internal"
 )
 
 func TestLinkedStack_Push(t *testing.T) {

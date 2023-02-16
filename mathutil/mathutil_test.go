@@ -3,7 +3,7 @@ package mathutil
 import (
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/v2/internal"
 )
 
 func TestExponent(t *testing.T) {

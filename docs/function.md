@@ -6,8 +6,8 @@ Package function can control the flow of function execution and support part of 
 
 ## Source:
 
--   [https://github.com/duke-git/lancet/blob/main/function/function.go](https://github.com/duke-git/lancet/blob/main/function/function.go)
--   [https://github.com/duke-git/lancet/blob/main/function/watcher.go](https://github.com/duke-git/lancet/blob/main/function/watcher.go)
+-   [https://github.com/serialt/lancet/blob/main/function/function.go](https://github.com/serialt/lancet/blob/main/function/function.go)
+-   [https://github.com/serialt/lancet/blob/main/function/watcher.go](https://github.com/serialt/lancet/blob/main/function/watcher.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -15,7 +15,7 @@ Package function can control the flow of function execution and support part of 
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 ```
 
@@ -53,7 +53,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {
@@ -86,8 +86,8 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
-    "github.com/duke-git/lancet/v2/internal"
+    "github.com/serialt/lancet/v2/function"
+    "github.com/serialt/lancet/v2/internal"
 )
 
 func main() {
@@ -124,7 +124,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {
@@ -163,7 +163,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {
@@ -201,7 +201,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {
@@ -251,7 +251,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {
@@ -283,7 +283,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {
@@ -323,7 +323,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {
@@ -374,7 +374,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/v2/function"
 )
 
 func main() {

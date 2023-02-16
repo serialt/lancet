@@ -6,9 +6,9 @@ algorithm 算法包实现一些基本算法，sort，search，lrucache。
 
 ## 源码
 
--   [https://github.com/duke-git/lancet/blob/main/algorithm/sort.go](https://github.com/duke-git/lancet/blob/main/algorithm/sort.go)
--   [https://github.com/duke-git/lancet/blob/main/algorithm/search.go](https://github.com/duke-git/lancet/blob/main/algorithm/search.go)
--   [https://github.com/duke-git/lancet/blob/main/algorithm/lru_cache.go](https://github.com/duke-git/lancet/blob/main/algorithm/lru_cache.go)
+-   [https://github.com/serialt/lancet/blob/main/algorithm/sort.go](https://github.com/serialt/lancet/blob/main/algorithm/sort.go)
+-   [https://github.com/serialt/lancet/blob/main/algorithm/search.go](https://github.com/serialt/lancet/blob/main/algorithm/search.go)
+-   [https://github.com/serialt/lancet/blob/main/algorithm/lru_cache.go](https://github.com/serialt/lancet/blob/main/algorithm/lru_cache.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -16,7 +16,7 @@ algorithm 算法包实现一些基本算法，sort，search，lrucache。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 ```
 
@@ -58,7 +58,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -106,7 +106,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type people struct {
@@ -117,7 +117,7 @@ type people struct {
 // PeopleAageComparator sort people slice by age field
 type peopleAgeComparator struct{}
 
-// Compare implements github.com/duke-git/lancet/lancetconstraints/constraints.go/Comparator
+// Compare implements github.com/serialt/lancet/lancetconstraints/constraints.go/Comparator
 func (pc *peopleAgeComparator) Compare(v1 any, v2 any) int {
     p1, _ := v1.(people)
     p2, _ := v2.(people)
@@ -169,7 +169,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -217,7 +217,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -265,7 +265,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -313,7 +313,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -361,7 +361,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -409,7 +409,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 
@@ -458,7 +458,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -509,7 +509,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 type intComparator struct{}
@@ -560,7 +560,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 func main() {
@@ -603,7 +603,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/v2/algorithm"
 )
 
 func main() {

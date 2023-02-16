@@ -3,7 +3,7 @@ package formatter
 import (
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/v2/internal"
 )
 
 func TestComma(t *testing.T) {

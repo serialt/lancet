@@ -5,7 +5,7 @@
 
 ## 源码
 
-- [https://github.com/duke-git/lancet/blob/main/datastructure/tree/bstree.go](https://github.com/duke-git/lancet/blob/main/datastructure/tree/bstree.go)
+- [https://github.com/serialt/lancet/blob/main/datastructure/tree/bstree.go](https://github.com/serialt/lancet/blob/main/datastructure/tree/bstree.go)
 
 
 <div STYLE="page-break-after: always;"></div>
@@ -13,7 +13,7 @@
 ## 用法
 ```go
 import (
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 ```
 
@@ -69,7 +69,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -110,7 +110,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -156,7 +156,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -204,7 +204,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -250,7 +250,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -296,7 +296,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -342,7 +342,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -388,7 +388,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -434,7 +434,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}
@@ -486,7 +486,7 @@ package main
 
 import (
     "fmt"
-    tree "github.com/duke-git/lancet/v2/datastructure/tree"
+    tree "github.com/serialt/lancet/v2/datastructure/tree"
 )
 
 type intComparator struct{}

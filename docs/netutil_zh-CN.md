@@ -6,9 +6,9 @@ netutil 网络包支持获取 ip 地址，发送 http 请求。
 
 ## 源码:
 
--   [https://github.com/duke-git/lancet/blob/main/netutil/net.go](https://github.com/duke-git/lancet/blob/main/netutil/net.go)
+-   [https://github.com/serialt/lancet/blob/main/netutil/net.go](https://github.com/serialt/lancet/blob/main/netutil/net.go)
 
--   [https://github.com/duke-git/lancet/blob/main/netutil/http.go](https://github.com/duke-git/lancet/blob/main/netutil/http.go)
+-   [https://github.com/serialt/lancet/blob/main/netutil/http.go](https://github.com/serialt/lancet/blob/main/netutil/http.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -16,7 +16,7 @@ netutil 网络包支持获取 ip 地址，发送 http 请求。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 ```
 
@@ -66,7 +66,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -101,7 +101,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -137,7 +137,7 @@ package main
 import (
     "fmt"
     "net"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -169,7 +169,7 @@ package main
 import (
     "fmt"
     "net"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -199,7 +199,7 @@ package main
 import (
     "fmt"
     "net"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -242,7 +242,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -272,7 +272,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -311,7 +311,7 @@ package main
 import (
     "fmt"
     "net"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -348,7 +348,7 @@ package main
 import (
     "fmt"
     "net"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -392,7 +392,7 @@ package main
 import (
     "fmt"
     "net"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -450,7 +450,7 @@ import (
     "fmt"
     "net"
     "time"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -481,7 +481,7 @@ import (
     "fmt"
     "net"
     "time"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -535,7 +535,7 @@ import (
     "fmt"
     "net"
     "time"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -587,7 +587,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -633,7 +633,7 @@ import (
     "fmt"
     "io/ioutil"
     "log"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -676,7 +676,7 @@ import (
     "fmt"
     "io/ioutil"
     "log"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -725,7 +725,7 @@ import (
     "fmt"
     "io/ioutil"
     "log"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -775,7 +775,7 @@ import (
     "fmt"
     "io/ioutil"
     "log"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -814,7 +814,7 @@ import (
     "fmt"
     "io/ioutil"
     "log"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {
@@ -860,7 +860,7 @@ import (
     "fmt"
     "io/ioutil"
     "log"
-    "github.com/duke-git/lancet/v2/netutil"
+    "github.com/serialt/lancet/v2/netutil"
 )
 
 func main() {

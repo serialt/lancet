@@ -6,7 +6,7 @@ strutil 包含处理字符串的相关函数。
 
 ## 源码:
 
--   [https://github.com/duke-git/lancet/blob/main/strutil/string.go](https://github.com/duke-git/lancet/blob/main/strutil/string.go)
+-   [https://github.com/serialt/lancet/blob/main/strutil/string.go](https://github.com/serialt/lancet/blob/main/strutil/string.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ strutil 包含处理字符串的相关函数。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 ```
 
@@ -62,7 +62,7 @@ func After(s, char string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -102,7 +102,7 @@ func AfterLast(s, char string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -142,7 +142,7 @@ func Before(s, char string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -179,7 +179,7 @@ func BeforeLast(s, char string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -216,7 +216,7 @@ func CamelCase(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -251,7 +251,7 @@ func KebabCase(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -286,7 +286,7 @@ func UpperKebabCase(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -321,7 +321,7 @@ func Capitalize(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -356,7 +356,7 @@ func IsString(v any) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -396,7 +396,7 @@ func LowerFirst(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -430,7 +430,7 @@ func UpperFirst(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -464,7 +464,7 @@ func PadEnd(source string, size int, padStr string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -510,7 +510,7 @@ func PadStart(source string, size int, padStr string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -556,7 +556,7 @@ func Reverse(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -587,7 +587,7 @@ func SnakeCase(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -622,7 +622,7 @@ func SnakeCase(s string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -657,7 +657,7 @@ func SplitEx(s, sep string, removeEmptyString bool) []string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -698,7 +698,7 @@ func Substring(s string, offset int, length uint) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -741,7 +741,7 @@ func Wrap(str string, wrapWith string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {
@@ -778,7 +778,7 @@ func Unwrap(str string, wrapToken string) string
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/v2/strutil"
 )
 
 func main() {

@@ -6,7 +6,7 @@ HashMap 数据结构实现
 
 ## 源码
 
-- [https://github.com/duke-git/lancet/blob/main/datastructure/hashmap/hashmap.go](https://github.com/duke-git/lancet/blob/main/datastructure/hashmap/hashmap.go)
+- [https://github.com/serialt/lancet/blob/main/datastructure/hashmap/hashmap.go](https://github.com/serialt/lancet/blob/main/datastructure/hashmap/hashmap.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ HashMap 数据结构实现
 
 ```go
 import (
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 ```
 
@@ -53,7 +53,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -79,7 +79,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -105,7 +105,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -133,7 +133,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -162,7 +162,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -194,7 +194,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -224,7 +224,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -259,7 +259,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {
@@ -291,7 +291,7 @@ package main
 
 import (
     "fmt"
-    hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+    hashmap "github.com/serialt/lancet/v2/datastructure/hashmap"
 )
 
 func main() {

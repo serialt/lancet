@@ -6,7 +6,7 @@ formatter contains some functions for data formatting.
 
 ## Source:
 
--   [https://github.com/duke-git/lancet/blob/main/formatter/formatter.go](https://github.com/duke-git/lancet/blob/main/formatter/formatter.go)
+-   [https://github.com/serialt/lancet/blob/main/formatter/formatter.go](https://github.com/serialt/lancet/blob/main/formatter/formatter.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ formatter contains some functions for data formatting.
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/v2/formatter"
 )
 ```
 
@@ -45,7 +45,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/v2/formatter"
 )
 
 func main() {

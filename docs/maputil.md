@@ -6,7 +6,7 @@ Package maputil includes some functions to manipulate map.
 
 ## Source:
 
--   [https://github.com/duke-git/lancet/blob/main/maputil/map.go](https://github.com/duke-git/lancet/blob/main/maputil/map.go)
+-   [https://github.com/serialt/lancet/blob/main/maputil/map.go](https://github.com/serialt/lancet/blob/main/maputil/map.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ Package maputil includes some functions to manipulate map.
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 ```
 
@@ -52,7 +52,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -93,7 +93,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -138,7 +138,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -193,7 +193,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -232,7 +232,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -271,7 +271,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -313,7 +313,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {
@@ -352,7 +352,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/v2/maputil"
 )
 
 func main() {

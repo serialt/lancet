@@ -6,7 +6,7 @@ convertor 转换器包支持一些常见的数据类型转换
 
 ## 源码:
 
--   [https://github.com/duke-git/lancet/blob/main/convertor/convertor.go](https://github.com/duke-git/lancet/blob/main/convertor/convertor.go)
+-   [https://github.com/serialt/lancet/blob/main/convertor/convertor.go](https://github.com/serialt/lancet/blob/main/convertor/convertor.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ convertor 转换器包支持一些常见的数据类型转换
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 ```
 
@@ -61,7 +61,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -92,7 +92,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -125,7 +125,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -166,7 +166,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -199,7 +199,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -235,7 +235,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -272,7 +272,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -317,7 +317,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -359,7 +359,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -394,7 +394,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -435,7 +435,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -464,7 +464,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -512,7 +512,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -550,7 +550,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -580,7 +580,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -609,7 +609,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {
@@ -645,7 +645,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/convertor"
+    "github.com/serialt/lancet/v2/convertor"
 )
 
 func main() {

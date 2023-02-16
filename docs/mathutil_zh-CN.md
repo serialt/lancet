@@ -6,7 +6,7 @@ mathutil 包实现了一些数学计算的函数.
 
 ## 源码:
 
--   [https://github.com/duke-git/lancet/blob/main/mathutil/mathutil.go](https://github.com/duke-git/lancet/blob/main/mathutil/mathutil.go)
+-   [https://github.com/serialt/lancet/blob/main/mathutil/mathutil.go](https://github.com/serialt/lancet/blob/main/mathutil/mathutil.go)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -14,7 +14,7 @@ mathutil 包实现了一些数学计算的函数.
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 ```
 
@@ -56,7 +56,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -91,7 +91,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -127,7 +127,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -163,7 +163,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -199,7 +199,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -232,7 +232,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -276,7 +276,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -309,7 +309,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -353,7 +353,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -386,7 +386,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -422,7 +422,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
@@ -458,7 +458,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/mathutil"
+    "github.com/serialt/lancet/v2/mathutil"
 )
 
 func main() {
