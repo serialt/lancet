@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/duke-git/lancet/v2/datastructure"
+	"github.com/serialt/lancet/datastructure"
 )
 
 // SinglyLink is a linked list. Whose node has a Value generics and Next pointer points to a next node of the sl.

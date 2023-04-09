@@ -14,7 +14,7 @@ validator 验证器包，包含常用字符串格式验证函数。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 ```
 
@@ -75,7 +75,7 @@ func ContainChinese(s string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -109,7 +109,7 @@ func ContainLetter(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -143,7 +143,7 @@ func ContainLower(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -177,7 +177,7 @@ func ContainUpper(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -211,7 +211,7 @@ func IsAlpha(s string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -245,7 +245,7 @@ func IsAllUpper(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -279,7 +279,7 @@ func IsAllLower(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -313,7 +313,7 @@ func IsASCII(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -353,7 +353,7 @@ func IsBase64(base64 string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -384,7 +384,7 @@ func IsChineseMobile(mobileNum string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -415,7 +415,7 @@ func IsChineseIdNum(id string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -446,7 +446,7 @@ func IsChinesePhone(phone string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -477,7 +477,7 @@ func IsCreditCard(creditCart string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -508,7 +508,7 @@ func IsDns(dns string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -542,7 +542,7 @@ func IsEmail(email string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -573,7 +573,7 @@ func IsEmptyString(s string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -607,7 +607,7 @@ func IsInt(v any) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -644,7 +644,7 @@ func IsFloat(v any) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -681,7 +681,7 @@ func IsNumber(v any) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -719,7 +719,7 @@ func IsIntStr(s string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -756,7 +756,7 @@ func IsFloatStr(s string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -793,7 +793,7 @@ func IsNumberStr(s string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -830,7 +830,7 @@ func IsJSON(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -867,7 +867,7 @@ func IsRegexMatch(s, regex string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -900,7 +900,7 @@ func IsIp(ipstr string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -937,7 +937,7 @@ func IsIpV4(ipstr string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -968,7 +968,7 @@ func IsIpV6(ipstr string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -999,7 +999,7 @@ func IsStrongPassword(password string, length int) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -1030,7 +1030,7 @@ func IsUrl(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -1065,7 +1065,7 @@ func IsWeakPassword(password string, length int) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -1096,7 +1096,7 @@ func IsZeroValue(value any) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -1134,7 +1134,7 @@ func IsGBK(data []byte) bool
 import (
     "fmt"
     "golang.org/x/text/encoding/simplifiedchinese"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {
@@ -1166,7 +1166,7 @@ func IsPrintable(str string) bool
 ```go
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/validator"
+    "github.com/serialt/lancet/validator"
 )
 
 func main() {

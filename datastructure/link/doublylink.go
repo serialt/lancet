@@ -3,7 +3,7 @@ package datastructure
 import (
 	"fmt"
 
-	"github.com/duke-git/lancet/v2/datastructure"
+	"github.com/serialt/lancet/datastructure"
 )
 
 // DoublyLink is a linked list. Whose node has a generic Value, Pre pointer points to a previous node of the dl, Next pointer points to a next node of the dl.

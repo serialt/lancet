@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/internal"
 )
 
 // Promise represents the eventual completion (or failure) of an asynchronous operation and its resulting value.

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/internal"
 )
 
 func TestOf(t *testing.T) {

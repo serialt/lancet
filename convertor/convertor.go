@@ -11,11 +11,12 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
 	"math"
 	"reflect"
 	"strconv"
 	"strings"
+
+	"github.com/serialt/lancet/structs"
 )
 
 // ToBool convert string to boolean.

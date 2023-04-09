@@ -3,7 +3,7 @@ package datastructure
 import (
 	"errors"
 
-	"github.com/duke-git/lancet/v2/lancetconstraints"
+	"github.com/serialt/lancet/lancetconstraints"
 )
 
 // PriorityQueue is a priority queue implemented by binary heap tree

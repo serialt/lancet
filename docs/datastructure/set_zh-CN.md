@@ -14,7 +14,7 @@ Set 集合数据结构，类似列表。Set 中元素不重复。
 
 ```go
 import (
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 ```
 
@@ -63,7 +63,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -89,7 +89,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -115,7 +115,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -141,7 +141,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -169,7 +169,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -202,7 +202,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -241,7 +241,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -270,7 +270,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -299,7 +299,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -329,7 +329,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -356,7 +356,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -385,7 +385,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -415,7 +415,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -446,7 +446,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -483,7 +483,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -512,7 +512,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -541,7 +541,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -570,7 +570,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -599,7 +599,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {
@@ -632,7 +632,7 @@ package main
 
 import (
     "fmt"
-    set "github.com/duke-git/lancet/v2/datastructure/set"
+    set "github.com/serialt/lancet/datastructure/set"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/internal"
 )
 
 func TestKeys(t *testing.T) {

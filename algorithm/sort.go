@@ -3,7 +3,7 @@
 
 package algorithm
 
-import "github.com/duke-git/lancet/v2/lancetconstraints"
+import "github.com/serialt/lancet/lancetconstraints"
 
 // BubbleSort applys the bubble sort algorithm to sort the collection, will change the original collection data.
 // Play: https://go.dev/play/p/GNdv7Jg2Taj

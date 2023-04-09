@@ -4,7 +4,7 @@ package structs
 import (
 	"reflect"
 
-	"github.com/duke-git/lancet/v2/pointer"
+	"github.com/serialt/lancet/pointer"
 )
 
 // defaultTagName is the default tag for struct fields to lookup.

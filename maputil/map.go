@@ -7,7 +7,7 @@ package maputil
 import (
 	"reflect"
 
-	"github.com/duke-git/lancet/v2/slice"
+	"github.com/serialt/lancet/slice"
 )
 
 // Keys returns a slice of the map's keys.

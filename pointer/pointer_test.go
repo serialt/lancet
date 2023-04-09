@@ -1,8 +1,9 @@
 package pointer
 
 import (
-	"github.com/duke-git/lancet/v2/internal"
 	"testing"
+
+	"github.com/serialt/lancet/internal"
 )
 
 func TestExtractPointer(t *testing.T) {

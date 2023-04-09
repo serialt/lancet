@@ -10,7 +10,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/duke-git/lancet/v2/random"
+	"github.com/serialt/lancet/random"
 )
 
 // XError is to handle error related information.

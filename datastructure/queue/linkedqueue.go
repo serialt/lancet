@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/duke-git/lancet/v2/datastructure"
+	"github.com/serialt/lancet/datastructure"
 )
 
 // LinkedQueue implements queue with link list

@@ -7,7 +7,7 @@ package datastructure
 import (
 	"fmt"
 
-	"github.com/duke-git/lancet/v2/lancetconstraints"
+	"github.com/serialt/lancet/lancetconstraints"
 )
 
 // MaxHeap implements a binary max heap

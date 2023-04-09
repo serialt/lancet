@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
-	"github.com/duke-git/lancet/v2/slice"
+	"github.com/serialt/lancet/internal"
+	"github.com/serialt/lancet/slice"
 )
 
 func TestToChar(t *testing.T) {

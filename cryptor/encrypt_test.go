@@ -3,7 +3,7 @@ package cryptor
 import (
 	"testing"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/internal"
 )
 
 func TestAesEcbEncrypt(t *testing.T) {

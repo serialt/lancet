@@ -14,7 +14,7 @@ Field 包封装了一个抽象的`Field`结构体，提供了操作`struct`属�
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/structs"
+    "github.com/serialt/lancet/structs"
 )
 ```
 
@@ -58,7 +58,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -95,7 +95,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -131,7 +131,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -176,7 +176,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -215,7 +215,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -254,7 +254,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -293,7 +293,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -332,7 +332,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {

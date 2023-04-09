@@ -3,8 +3,8 @@ package datastructure
 import (
 	"math"
 
-	"github.com/duke-git/lancet/v2/datastructure"
-	"github.com/duke-git/lancet/v2/lancetconstraints"
+	"github.com/serialt/lancet/datastructure"
+	"github.com/serialt/lancet/lancetconstraints"
 )
 
 // BSTree is a binary search tree data structure in which each node has at most two children,

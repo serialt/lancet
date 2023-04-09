@@ -15,7 +15,7 @@ formatter 格式化器包含一些数据格式化处理方法。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 ```
 
@@ -52,7 +52,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 
 func main() {
@@ -88,7 +88,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 
 func main() {
@@ -127,7 +127,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 
 func main() {
@@ -170,7 +170,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 
 func main() {
@@ -209,7 +209,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 
 func main() {
@@ -248,7 +248,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 
 func main() {
@@ -287,7 +287,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/formatter"
+    "github.com/serialt/lancet/formatter"
 )
 
 func main() {

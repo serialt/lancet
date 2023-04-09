@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/duke-git/lancet/v2/convertor"
-	"github.com/duke-git/lancet/v2/strutil"
-	"github.com/duke-git/lancet/v2/validator"
+	"github.com/serialt/lancet/convertor"
+	"github.com/serialt/lancet/strutil"
+	"github.com/serialt/lancet/validator"
 	"golang.org/x/exp/constraints"
 )
 

@@ -14,7 +14,7 @@ maputil 包包括一些操作 map 的函数。
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 ```
 
@@ -64,7 +64,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -105,7 +105,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -150,7 +150,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -189,7 +189,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -228,7 +228,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -270,7 +270,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -309,7 +309,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -347,7 +347,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -402,7 +402,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -441,7 +441,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -480,7 +480,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -522,7 +522,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -560,7 +560,7 @@ package main
 import (
     "fmt"
     "sort"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -601,7 +601,7 @@ package main
 import (
     "fmt"
     "sort"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -651,7 +651,7 @@ package main
 import (
     "fmt"
     "strconv"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -690,7 +690,7 @@ package main
 import (
     "fmt"
     "strconv"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -734,7 +734,7 @@ package main
 import (
     "fmt"
     "sort"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -779,7 +779,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -814,7 +814,7 @@ package main
 import (
     "fmt"
     "strconv"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {
@@ -852,7 +852,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/maputil"
+    "github.com/serialt/lancet/maputil"
 )
 
 func main() {

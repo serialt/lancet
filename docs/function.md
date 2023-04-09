@@ -15,7 +15,7 @@ Package function can control the flow of function execution and support part of 
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 ```
 
@@ -54,7 +54,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {
@@ -87,8 +87,8 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
-    "github.com/duke-git/lancet/v2/internal"
+    "github.com/serialt/lancet/function"
+    "github.com/serialt/lancet/internal"
 )
 
 func main() {
@@ -125,7 +125,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {
@@ -164,7 +164,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {
@@ -202,7 +202,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {
@@ -252,7 +252,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {
@@ -284,7 +284,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {
@@ -324,7 +324,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {
@@ -375,7 +375,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/function"
+    "github.com/serialt/lancet/function"
 )
 
 func main() {

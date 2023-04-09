@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/internal"
 )
 
 func TestAddDay(t *testing.T) {

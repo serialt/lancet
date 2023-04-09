@@ -13,7 +13,7 @@ List is a linear table, implemented with slice.
 ## Usage
 ```go
 import (
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 ```
 
@@ -80,7 +80,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -106,7 +106,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -135,7 +135,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -164,7 +164,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -194,7 +194,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -220,7 +220,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -246,7 +246,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -272,7 +272,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -300,7 +300,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -329,7 +329,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -361,7 +361,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -392,7 +392,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -430,7 +430,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -467,7 +467,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -500,7 +500,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -530,7 +530,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -560,7 +560,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -588,7 +588,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -617,7 +617,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -646,7 +646,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -674,7 +674,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -704,7 +704,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -733,7 +733,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -762,7 +762,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -791,7 +791,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -821,7 +821,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -850,7 +850,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -879,7 +879,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -908,7 +908,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -946,7 +946,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -984,7 +984,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -1015,7 +1015,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -1049,7 +1049,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -1078,7 +1078,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {
@@ -1106,7 +1106,7 @@ package main
 
 import (
     "fmt"
-    list "github.com/duke-git/lancet/v2/datastructure/list"
+    list "github.com/serialt/lancet/datastructure/list"
 )
 
 func main() {

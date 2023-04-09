@@ -14,7 +14,7 @@ Package retry is for executing a function repeatedly until it was successful or 
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/retry"
+    "github.com/serialt/lancet/retry"
 )
 ```
 
@@ -49,7 +49,7 @@ import (
     "context"
     "errors"
     "fmt"
-    "github.com/duke-git/lancet/v2/retry"
+    "github.com/serialt/lancet/retry"
     "time"
 )
 
@@ -98,7 +98,7 @@ import (
     "fmt"
     "errors"
     "log"
-    "github.com/duke-git/lancet/v2/retry"
+    "github.com/serialt/lancet/retry"
 )
 
 func main() {
@@ -144,7 +144,7 @@ import (
     "fmt"
     "errors"
     "log"
-    "github.com/duke-git/lancet/v2/retry"
+    "github.com/serialt/lancet/retry"
 )
 
 func main() {
@@ -187,7 +187,7 @@ import (
     "fmt"
     "errors"
     "log"
-    "github.com/duke-git/lancet/v2/retry"
+    "github.com/serialt/lancet/retry"
 )
 
 func main() {
@@ -233,7 +233,7 @@ import (
     "fmt"
     "errors"
     "log"
-    "github.com/duke-git/lancet/v2/retry"
+    "github.com/serialt/lancet/retry"
 )
 
 func main() {

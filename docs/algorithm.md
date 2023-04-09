@@ -16,7 +16,7 @@ Package algorithm implements some basic algorithm. eg. sort, search.
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 ```
 
@@ -58,7 +58,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -106,7 +106,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type people struct {
@@ -169,7 +169,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -217,7 +217,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -265,7 +265,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -313,7 +313,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -361,7 +361,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -409,7 +409,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 
@@ -458,7 +458,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -509,7 +509,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 type intComparator struct{}
@@ -560,7 +560,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 func main() {
@@ -603,7 +603,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/algorithm"
+    "github.com/serialt/lancet/algorithm"
 )
 
 func main() {

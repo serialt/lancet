@@ -14,7 +14,7 @@ Struct is abstract struct for provide several high level functions
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/structs"
+    "github.com/serialt/lancet/structs"
 )
 ```
 
@@ -47,7 +47,7 @@ func New(value any, tagName ...string) *Struct
 package main
 
 import (
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -83,7 +83,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -125,7 +125,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -160,7 +160,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {
@@ -195,7 +195,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/duke-git/lancet/v2/structs"
+	"github.com/serialt/lancet/structs"
 )
 
 func main() {

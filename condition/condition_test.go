@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/duke-git/lancet/v2/internal"
+	"github.com/serialt/lancet/internal"
 )
 
 type TestStruct struct{}

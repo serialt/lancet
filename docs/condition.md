@@ -12,7 +12,7 @@ Package condition contains some functions for conditional judgment. eg. And, Or,
 ## Usage:
 ```go
 import (
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 ```
 
@@ -53,7 +53,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {
@@ -118,7 +118,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {
@@ -146,7 +146,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {
@@ -174,7 +174,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {
@@ -202,7 +202,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {
@@ -229,7 +229,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {
@@ -256,7 +256,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {
@@ -284,7 +284,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/condition"
+    "github.com/serialt/lancet/condition"
 )
 
 func main() {

@@ -14,7 +14,7 @@ Package xerror implements helpers for errors.
 
 ```go
 import (
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 ```
 
@@ -65,7 +65,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -94,7 +94,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -126,7 +126,7 @@ package main
 import (
     "fmt"
     "github.com/pkg/errors"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -160,7 +160,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -191,7 +191,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -224,7 +224,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -256,7 +256,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -293,7 +293,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -330,7 +330,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -363,7 +363,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -397,7 +397,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -437,7 +437,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {
@@ -465,7 +465,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/xerror"
+    "github.com/serialt/lancet/xerror"
 )
 
 func main() {

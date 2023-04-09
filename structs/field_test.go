@@ -1,9 +1,10 @@
 package structs
 
 import (
-	"github.com/duke-git/lancet/v2/internal"
 	"reflect"
 	"testing"
+
+	"github.com/serialt/lancet/internal"
 )
 
 func TestField_Tag(t *testing.T) {

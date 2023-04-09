@@ -5,8 +5,8 @@
 
 ![Go version](https://img.shields.io/badge/go-%3E%3Dv1.18-9cf)
 [![Release](https://img.shields.io/badge/release-2.1.18-green.svg)](https://github.com/duke-git/lancet/releases)
-[![GoDoc](https://godoc.org/github.com/duke-git/lancet/v2?status.svg)](https://pkg.go.dev/github.com/duke-git/lancet/v2)
-[![Go Report Card](https://goreportcard.com/badge/github.com/duke-git/lancet/v2)](https://goreportcard.com/report/github.com/duke-git/lancet/v2)
+[![GoDoc](https://godoc.org/github.com/serialt/lancet?status.svg)](https://pkg.go.dev/github.com/serialt/lancet)
+[![Go Report Card](https://goreportcard.com/badge/github.com/serialt/lancet)](https://goreportcard.com/report/github.com/serialt/lancet)
 [![test](https://github.com/duke-git/lancet/actions/workflows/codecov.yml/badge.svg?branch=main&event=push)](https://github.com/duke-git/lancet/actions/workflows/codecov.yml)
 [![codecov](https://codecov.io/gh/duke-git/lancet/branch/main/graph/badge.svg?token=FC48T1F078)](https://codecov.io/gh/duke-git/lancet)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/duke-git/lancet/blob/main/LICENSE)
@@ -35,7 +35,7 @@ English | [简体中文](./README_zh-CN.md)
 1. <b>For users who use go1.18 and above, it is recommended to install lancet v2.x.x. Cause in v2.x.x all functions was rewriten with generics of go1.18.</b>
 
 ```go
-go get github.com/duke-git/lancet/v2 // will install latest version of v2.x.x
+go get github.com/serialt/lancet // will install latest version of v2.x.x
 ```
 
 2. <b>For users who use version below go1.18, you should install v1.x.x. The latest of v1.x.x is v1.3.7. </b>
@@ -49,7 +49,7 @@ go get github.com/duke-git/lancet // below go1.18, install latest version of v1.
 Lancet organizes the code into package structure, and you need to import the corresponding package name when use it. For example, if you use string-related functions,import the strutil package like below:
 
 ```go
-import "github.com/duke-git/lancet/v2/strutil"
+import "github.com/serialt/lancet/strutil"
 ```
 
 ## Example
@@ -61,7 +61,7 @@ package main
 
 import (
     "fmt"
-    "github.com/duke-git/lancet/v2/strutil"
+    "github.com/serialt/lancet/strutil"
 )
 
 func main() {
@@ -76,7 +76,7 @@ func main() {
 ### 1. Algorithm package implements some basic algorithm. eg. sort, search.
 
 ```go
-import "github.com/duke-git/lancet/v2/algorithm"
+import "github.com/serialt/lancet/algorithm"
 ```
 
 #### Function list:
@@ -121,7 +121,7 @@ import "github.com/duke-git/lancet/v2/algorithm"
 ### 2. Concurrency package contain some functions to support concurrent programming. eg, goroutine, channel, async.
 
 ```go
-import "github.com/duke-git/lancet/v2/concurrency"
+import "github.com/serialt/lancet/concurrency"
 ```
 
 #### Function list:
@@ -160,7 +160,7 @@ import "github.com/duke-git/lancet/v2/concurrency"
 ### 3. Condition package contains some functions for conditional judgment. eg. And, Or, TernaryOperator...
 
 ```go
-import "github.com/duke-git/lancet/v2/condition"
+import "github.com/serialt/lancet/condition"
 ```
 
 #### Function list:
@@ -193,7 +193,7 @@ import "github.com/duke-git/lancet/v2/condition"
 ### 4. Convertor package contains some functions for data convertion.
 
 ```go
-import "github.com/duke-git/lancet/v2/convertor"
+import "github.com/serialt/lancet/convertor"
 ```
 
 #### Function list:
@@ -256,7 +256,7 @@ import "github.com/duke-git/lancet/v2/convertor"
 ### 5. Cryptor package is for data encryption and decryption.
 
 ```go
-import "github.com/duke-git/lancet/v2/cryptor"
+import "github.com/serialt/lancet/cryptor"
 ```
 
 #### Function list:
@@ -360,7 +360,7 @@ import "github.com/duke-git/lancet/v2/cryptor"
 ### 6. Datetime package supports date and time format and compare.
 
 ```go
-import "github.com/duke-git/lancet/v2/datetime"
+import "github.com/serialt/lancet/datetime"
 ```
 
 #### Function list:
@@ -459,14 +459,14 @@ import "github.com/duke-git/lancet/v2/datetime"
 ### 7. Datastructure package constains some common data structure. eg. list, linklist, stack, queue, set, tree, graph.
 
 ```go
-import list "github.com/duke-git/lancet/v2/datastructure/list"
-import link "github.com/duke-git/lancet/v2/datastructure/link"
-import stack "github.com/duke-git/lancet/v2/datastructure/stack"
-import queue "github.com/duke-git/lancet/v2/datastructure/queue"
-import set "github.com/duke-git/lancet/v2/datastructure/set"
-import tree "github.com/duke-git/lancet/v2/datastructure/tree"
-import heap "github.com/duke-git/lancet/v2/datastructure/heap"
-import hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
+import list "github.com/serialt/lancet/datastructure/list"
+import link "github.com/serialt/lancet/datastructure/link"
+import stack "github.com/serialt/lancet/datastructure/stack"
+import queue "github.com/serialt/lancet/datastructure/queue"
+import set "github.com/serialt/lancet/datastructure/set"
+import tree "github.com/serialt/lancet/datastructure/tree"
+import heap "github.com/serialt/lancet/datastructure/heap"
+import hashmap "github.com/serialt/lancet/datastructure/hashmap"
 ```
 
 #### Structure list:
@@ -491,7 +491,7 @@ import hashmap "github.com/duke-git/lancet/v2/datastructure/hashmap"
 ### 8. Fileutil package implements some basic functions for file operations.
 
 ```go
-import "github.com/duke-git/lancet/v2/fileutil"
+import "github.com/serialt/lancet/fileutil"
 ```
 
 #### Function list：
@@ -545,7 +545,7 @@ import "github.com/duke-git/lancet/v2/fileutil"
 ### 9. Formatter contains some functions for data formatting.
 
 ```go
-import "github.com/duke-git/lancet/v2/formatter"
+import "github.com/serialt/lancet/formatter"
 ```
 
 #### Function list:
@@ -557,7 +557,7 @@ import "github.com/duke-git/lancet/v2/formatter"
 ### 10. Function package can control the flow of function execution and support part of functional programming
 
 ```go
-import "github.com/duke-git/lancet/v2/function"
+import "github.com/serialt/lancet/function"
 ```
 
 #### Function list:
@@ -593,7 +593,7 @@ import "github.com/duke-git/lancet/v2/function"
 ### 11. Maputil package includes some functions to manipulate map.
 
 ```go
-import "github.com/duke-git/lancet/v2/maputil"
+import "github.com/serialt/lancet/maputil"
 ```
 
 #### Function list:
@@ -662,7 +662,7 @@ import "github.com/duke-git/lancet/v2/maputil"
 ### 12. Mathutil package implements some functions for math calculation.
 
 ```go
-import "github.com/duke-git/lancet/v2/mathutil"
+import "github.com/serialt/lancet/mathutil"
 ```
 
 #### Function list:
@@ -725,7 +725,7 @@ import "github.com/duke-git/lancet/v2/mathutil"
 ### 13. Netutil package contains functions to get net information and send http request.
 
 ```go
-import "github.com/duke-git/lancet/v2/netutil"
+import "github.com/serialt/lancet/netutil"
 ```
 
 #### Function list:
@@ -788,7 +788,7 @@ import "github.com/duke-git/lancet/v2/netutil"
 ### 14. Random package implements some basic functions to generate random int and string.
 
 ```go
-import "github.com/duke-git/lancet/v2/random"
+import "github.com/serialt/lancet/random"
 ```
 
 #### Function list:
@@ -821,7 +821,7 @@ import "github.com/duke-git/lancet/v2/random"
 ### 15. Retry package is for executing a function repeatedly until it was successful or canceled by the context.
 
 ```go
-import "github.com/duke-git/lancet/v2/retry"
+import "github.com/serialt/lancet/retry"
 ```
 
 #### Function list:
@@ -845,7 +845,7 @@ import "github.com/duke-git/lancet/v2/retry"
 ### 16. Slice contains some functions to manipulate slice.
 
 ```go
-import "github.com/duke-git/lancet/v2/slice"
+import "github.com/serialt/lancet/slice"
 ```
 
 #### Function list:
@@ -1046,7 +1046,7 @@ import "github.com/duke-git/lancet/v2/slice"
 ### 17. Structs package provides several high level functions to manipulate struct, tag, and field.
 
 ```go
-import "github.com/duke-git/lancet/v2/structs"
+import "github.com/serialt/lancet/structs"
 ```
 
 #### Function list:
@@ -1079,7 +1079,7 @@ import "github.com/duke-git/lancet/v2/structs"
 ### 18. Strutil package contains some functions to manipulate string.
 
 ```go
-import "github.com/duke-git/lancet/v2/strutil"
+import "github.com/serialt/lancet/strutil"
 ```
 
 #### Function list:
@@ -1160,7 +1160,7 @@ import "github.com/duke-git/lancet/v2/strutil"
 ### 19. System package contain some functions about os, runtime, shell command.
 
 ```go
-import "github.com/duke-git/lancet/v2/system"
+import "github.com/serialt/lancet/system"
 ```
 
 #### Function list:
@@ -1196,7 +1196,7 @@ import "github.com/duke-git/lancet/v2/system"
 ### 20. Validator package contains some functions for data validation.
 
 ```go
-import "github.com/duke-git/lancet/v2/validator"
+import "github.com/serialt/lancet/validator"
 ```
 
 #### Function list:
@@ -1295,7 +1295,7 @@ import "github.com/duke-git/lancet/v2/validator"
 ### 21. xerror package implements helpers for errors.
 
 ```go
-import "github.com/duke-git/lancet/v2/xerror"
+import "github.com/serialt/lancet/xerror"
 ```
 
 #### Function list:
