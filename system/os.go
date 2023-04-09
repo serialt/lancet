@@ -33,6 +33,16 @@ func IsMac() bool {
 	return runtime.GOOS == "darwin"
 }
 
+// IsAMD64 check if current arch is amd64 or x86_64
+func IsAMD64() bool {
+	return runtime.GOARCH == "amd64"
+}
+
+// IsARM64 check if current arch is arm64 or aarch
+func IsARM64() bool {
+	return runtime.GOARCH == "arm64"
+}
+
 // GetOsEnv gets the value of the environment variable named by the key.
 // Play: https://go.dev/play/p/D88OYVCyjO-
 func GetOsEnv(key string) string {
