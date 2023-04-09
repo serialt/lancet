@@ -31,16 +31,8 @@
 
 ### Note:
 
-1. <b>使用 go1.18 及以上版本的用户，建议安装 v2.x.x。 因为 v2.x.x 应用 go1.18 的泛型重写了大部分函数。</b>
-
 ```go
 go get github.com/serialt/lancet //安装v2最新版本v2.x.x
-```
-
-2. <b>使用 go1.18 以下版本的用户，必须安装 v1.x.x。目前最新的 v1 版本是 v1.3.7。</b>
-
-```go
-go get github.com/duke-git/lancet// 使用go1.18以下版本, 必须安装v1.x.x版本
 ```
 
 ## 用法

@@ -32,17 +32,10 @@ English | [简体中文](./README_zh-CN.md)
 
 ### Note:
 
-1. <b>For users who use go1.18 and above, it is recommended to install lancet v2.x.x. Cause in v2.x.x all functions was rewriten with generics of go1.18.</b>
-
 ```go
-go get github.com/serialt/lancet // will install latest version of v2.x.x
+go get github.com/serialt/lancet
 ```
 
-2. <b>For users who use version below go1.18, you should install v1.x.x. The latest of v1.x.x is v1.3.7. </b>
-
-```go
-go get github.com/duke-git/lancet // below go1.18, install latest version of v1.x.x
-```
 
 ## Usage
 
