@@ -11,13 +11,28 @@ import (
 	"fmt"
 	"io"
 	"io/fs"
+	"io/ioutil"
 	"net/http"
 	"os"
 	"path"
 	"path/filepath"
 	"runtime"
 	"strings"
+
+	"github.com/serialt/lancet/strutil"
 )
+
+// 获取项目路径
+func GetRootPath() string {
+
+	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+	if err != nil {
+		print(err.Error())
+	}
+
+	RootPath := strings.Replace(dir, "\\", "/", -1)
+	return RootPath
+}
 
 // IsExist checks if a file or directory exists.
 // Play: https://go.dev/play/p/nKKXt8ZQbmh
@@ -50,14 +65,62 @@ func CreateDir(absPath string) error {
 	return os.MkdirAll(path.Dir(absPath), os.ModePerm)
 }
 
+// MkDir 创建文件夹,支持x/a/a  多层级
+func MkDir(path string) error {
+	_, err := os.Stat(path)
+	if err != nil {
+		if os.IsNotExist(err) {
+			//文件夹不存在，创建
+			err = os.MkdirAll(path, os.ModePerm)
+			if err != nil {
+				return err
+			}
+		} else {
+			return err
+		}
+	}
+	return nil
+}
+
 // IsDir checks if the path is directory or not.
 // Play: https://go.dev/play/p/WkVwEKqtOWk
 func IsDir(path string) bool {
+	if len(path) == 0 {
+		return false
+	}
 	file, err := os.Stat(path)
 	if err != nil {
 		return false
 	}
 	return file.IsDir()
+}
+
+// IsFile reports whether the named file or directory exists. 是否是文件
+func IsFile(path string) bool {
+	if path == "" {
+		return false
+	}
+
+	if fi, err := os.Stat(path); err == nil {
+		return !fi.IsDir()
+	}
+	return false
+}
+
+// IsAbsPath is abs path. 是否是绝对路径
+func IsAbsPath(aPath string) bool {
+	return path.IsAbs(aPath)
+}
+
+// Dir get dir path, without last name. 获取路径的目录
+func PathDir(fpath string) string {
+	return filepath.Dir(fpath)
+}
+
+// Name get file/dir name 获取路径的文件名
+func Name(fpath string) string {
+	// return path.Base(fpath)
+	return filepath.Base(fpath)
 }
 
 // RemoveFile remove the path file.
@@ -145,6 +208,47 @@ func ReadFileByLine(path string) ([]string, error) {
 	}
 
 	return result, nil
+}
+
+// FileReadFirstLine 从文件中读取第一行并返回字符串数组
+func FileReadFirstLine(filePath string) (string, error) {
+	file, err := os.Open(filePath)
+	if err != nil {
+		return "", err
+	}
+	defer func() {
+		_ = file.Close()
+	}()
+	finReader := bufio.NewReader(file)
+	inputString, _ := finReader.ReadString('\n')
+	return strutil.StringTrimN(inputString), nil
+}
+
+// FileReadPointLine 从文件中读取指定行并返回字符串数组
+func FileReadPointLine(filePath string, line int) (string, error) {
+	file, err := os.Open(filePath)
+	if err != nil {
+		return "", err
+	}
+	defer func() {
+		_ = file.Close()
+	}()
+	finReader := bufio.NewReader(file)
+	lineCount := 1
+	for {
+		inputString, err := finReader.ReadString('\n')
+		//fmt.Println(inputString)
+		if err == io.EOF {
+			if lineCount == line {
+				return inputString, nil
+			}
+			return "", errors.New("index out of line count")
+		}
+		if lineCount == line {
+			return inputString, nil
+		}
+		lineCount++
+	}
 }
 
 // ListFileNames return all file names in the path.
@@ -310,6 +414,21 @@ func FileMode(path string) (fs.FileMode, error) {
 	return fi.Mode(), nil
 }
 
+// Suffix get filename ext. alias of path.Ext() 获取文件的后缀, main.go 获取的后缀是.go
+func FileExt(fpath string) string {
+	return filepath.Ext(fpath)
+}
+
+// Suffix get filename ext. alias of path.Ext() 获取文件的后缀, main.go 获取的后缀是.go
+func Suffix(fpath string) string {
+	return filepath.Ext(fpath)
+}
+
+// Prefix 获取文件名前缀, /tmp/main.go 获取的文件前缀是main
+func Prefix(fpath string) string {
+	return strings.TrimSuffix(filepath.Base(fpath), filepath.Ext(fpath))
+}
+
 // MiMeType return file mime type
 // param `file` should be string(file path) or *os.File.
 // Play: https://go.dev/play/p/bd5sevSUZNu
@@ -357,4 +476,220 @@ func CurrentPath() string {
 	}
 
 	return absPath
+}
+
+// FileParentPath 文件父路径
+func FileParentPath(filePath string) string {
+	return filePath[0:strings.LastIndex(filePath, "/")]
+}
+
+// ReadFile 读文件
+func ReadFile(filename string) ([]byte, error) {
+	file, err := os.Open(filename)
+	if err != nil {
+		return nil, err
+	}
+	defer file.Close()
+	contentByte, err := ioutil.ReadAll(file)
+	if err != nil {
+		return nil, err
+	}
+	return contentByte, nil
+}
+
+// WriteFile 写文件
+func WriteFile(filename string, data []byte, perm os.FileMode) error {
+	f, err := os.OpenFile(filename, os.O_CREATE|os.O_RDWR|os.O_APPEND, perm)
+	if err != nil {
+		return err
+	}
+	if _, err := f.Write(data); err != nil {
+		return err
+	}
+	if err := f.Close(); err != nil {
+		return err
+	}
+	return nil
+}
+
+// WriteStringToFile write string to file
+func WriteStringToFile(content, path string, mode os.FileMode) (err error) {
+	bytes := []byte(content)
+	return ioutil.WriteFile(path, bytes, mode)
+}
+
+// FilePathExists 判断路径是否存在
+func FilePathExists(path string) bool {
+	_, err := os.Stat(path)
+	return err == nil
+}
+
+// FileAppend 追加内容到文件中
+func FileAppend(filePath string, data []byte, force bool) (int, error) {
+	var (
+		file *os.File
+		n    int
+		err  error
+	)
+	exist := FilePathExists(filePath)
+	if exist {
+		if force {
+			// 创建文件，如果文件已存在，会将文件清空
+			if file, err = os.Create(filePath); err != nil {
+				return 0, err
+			}
+		} else {
+			if file, err = os.OpenFile(filePath, os.O_RDWR|os.O_APPEND, 0644); nil != err {
+				return 0, err
+			}
+		}
+	} else {
+		parentPath := FileParentPath(filePath)
+		if err = os.MkdirAll(parentPath, os.ModePerm); nil != err {
+			return 0, err
+		}
+		if file, err = os.Create(filePath); err != nil {
+			return 0, err
+		}
+	}
+	defer func() {
+		_ = file.Close()
+	}()
+	// 将数据写入文件中
+	//file.WriteString(string(data)) //写入字符串
+	if n, err = file.Write(data); nil != err { // 写入byte的slice数据
+		return 0, err
+	}
+	return n, nil
+}
+
+// RecreateDir recreate dir
+func RecreateDir(dir string) error {
+	mode, err := FileMode(dir)
+	if err != nil {
+		return err
+	}
+	_ = os.RemoveAll(dir)
+	return os.MkdirAll(dir, mode)
+}
+
+// GetFilepaths get all filepaths in a directory tree
+func GetFilepaths(dir string) ([]string, error) {
+	var paths []string
+	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return err
+		}
+		if !info.IsDir() {
+			paths = append(paths, path)
+		}
+		return nil
+	})
+	return paths, err
+}
+
+// FileLoopDirs 遍历目录下的所有子目录，即返回pathname下面的所有目录，目录为绝对路径
+func FileLoopDirs(pathname string) ([]string, error) {
+	var s []string
+	rd, err := ioutil.ReadDir(pathname)
+	if err != nil {
+		return s, err
+	}
+	for _, fi := range rd {
+		if fi.IsDir() {
+			fullName := pathname + "/" + fi.Name()
+			s = append(s, fullName)
+		}
+	}
+	return s, nil
+}
+
+// FileLoopOneDirs 遍历目录下的所有子目录，即返回pathname下面的所有目录，目录为相对路径
+func FileLoopOneDirs(pathname string) ([]string, error) {
+	var s []string
+	rd, err := ioutil.ReadDir(pathname)
+	if err != nil {
+		return s, err
+	}
+	for _, fi := range rd {
+		if fi.IsDir() {
+			s = append(s, fi.Name())
+		}
+	}
+	return s, nil
+}
+
+// FileLoopFiles 遍历文件夹及子文件夹下的所有文件，即返回pathname目录下所有的文件，文件名为绝对路径
+func FileLoopFiles(pathname string) ([]string, error) {
+	var s []string
+	rd, err := ioutil.ReadDir(pathname)
+	if err != nil {
+		return s, err
+	}
+	for _, fi := range rd {
+		if fi.IsDir() {
+			fullDir := path.Join(pathname, fi.Name())
+			sNew, err := FileLoopFiles(fullDir)
+			if err != nil {
+				return s, err
+			}
+			s = append(s, sNew...)
+		} else {
+			fullName := filepath.Join(pathname, fi.Name())
+			s = append(s, fullName)
+		}
+	}
+	return s, nil
+}
+
+// FileLoopFileNames 遍历文件夹及子文件夹下的所有文件名，即返回pathname目录下所有的文件，文件名为相对路径
+func FileLoopFileNames(pathname string) ([]string, error) {
+	var s []string
+	rd, err := ioutil.ReadDir(pathname)
+	if err != nil {
+		return s, err
+	}
+	for _, fi := range rd {
+		if fi.IsDir() {
+			fullDir := path.Join(pathname, fi.Name())
+			sNew, err := FileLoopFileNames(fullDir)
+			if err != nil {
+				return s, err
+			}
+			s = append(s, sNew...)
+		} else {
+			s = append(s, fi.Name())
+		}
+	}
+	return s, nil
+}
+
+// FileMove 移动文件
+func FileMove(src string, dst string) (err error) {
+	if dst == "" {
+		return nil
+	}
+	src, err = filepath.Abs(src)
+	if err != nil {
+		return err
+	}
+	dst, err = filepath.Abs(dst)
+	if err != nil {
+		return err
+	}
+	var revoke = false
+	dir := filepath.Dir(dst)
+Redirect:
+	_, err = os.Stat(dir)
+	if err != nil {
+		err = os.MkdirAll(dir, 0755)
+		if err != nil {
+			return err
+		}
+		if !revoke {
+			revoke = true
+			goto Redirect
+		}
+	}
+	return os.Rename(src, dst)
 }

@@ -8,7 +8,12 @@ import (
 	"bytes"
 	"os"
 	"os/exec"
+	"os/user"
+	"path/filepath"
 	"runtime"
+	"strings"
+	"syscall"
+	"time"
 	"unicode/utf8"
 
 	"github.com/serialt/lancet/validator"
@@ -108,6 +113,77 @@ func ExecCommand(command string) (stdout, stderr string, err error) {
 	return
 }
 
+// RunCmd 获取标准正确输出
+func RunCmd(str string, workDir ...string) (string, error) {
+	cmd := exec.Command("/bin/bash", "-c", str)
+	if len(workDir) > 0 {
+		cmd.Dir = workDir[0]
+	}
+	result, err := cmd.Output()
+	if err != nil {
+		return "", err
+	}
+	return string(result), nil
+
+}
+
+// RunCMD 标准正确错误输出到标准正确输出
+func RunCMD(str string, workDir ...string) (string, error) {
+	cmd := exec.Command("/bin/bash", "-c", str)
+	if len(workDir) > 0 {
+		cmd.Dir = workDir[0]
+	}
+	result, err := cmd.CombinedOutput()
+	if err != nil {
+		return string(result), err
+	}
+	return string(result), nil
+}
+
+// ExecCmd an command and return output. 指定目录执行shell
+// Usage:
+//
+//	ExecCmd("ls", []string{"-al"})
+func ExecCmd(binName string, args []string, workDir ...string) (string, error) {
+	// create a new Cmd instance
+	cmd := exec.Command(binName, args...)
+	if len(workDir) > 0 {
+		cmd.Dir = workDir[0]
+	}
+
+	bs, err := cmd.Output()
+	return string(bs), err
+}
+
+// RunCommandWithTimeout 带超时控制的执行shell命令
+func RunCommandWithTimeout(timeout int, workDir string, command string, args ...string) (stdout, stderr string, isKilled bool) {
+	var stdoutBuf, stderrBuf bytes.Buffer
+	cmd := exec.Command(command, args...)
+	if len(workDir) > 0 {
+		cmd.Dir = workDir
+	}
+	cmd.Stdout = &stdoutBuf
+	cmd.Stderr = &stderrBuf
+	cmd.Start()
+	done := make(chan error)
+	go func() {
+		done <- cmd.Wait()
+	}()
+	after := time.After(time.Duration(timeout) * time.Millisecond)
+	select {
+	case <-after:
+		cmd.Process.Signal(syscall.SIGINT)
+		time.Sleep(10 * time.Millisecond)
+		cmd.Process.Kill()
+		isKilled = true
+	case <-done:
+		isKilled = false
+	}
+	stdout = string(bytes.TrimSpace(stdoutBuf.Bytes())) // Remove \n
+	stderr = string(bytes.TrimSpace(stderrBuf.Bytes())) // Remove \n
+	return
+}
+
 func byteToString(data []byte, charset string) string {
 	var result string
 
@@ -131,4 +207,110 @@ func byteToString(data []byte, charset string) string {
 // Play: https://go.dev/play/p/ml-_XH3gJbW
 func GetOsBits() int {
 	return 32 << (^uint(0) >> 63)
+}
+
+// FindCommandPath 获取命令的路径
+func FindCommandPath(str string) (string, error) {
+	return exec.LookPath(str)
+
+}
+
+// Where 获取命令的路径，FindCommandPath的别名
+func Where(str string) (string, error) {
+	return exec.LookPath(str)
+}
+
+// FindUser find an system user by name.
+func FindUser(uname string) (*user.User, error) {
+	u, err := user.Lookup(uname)
+	if err != nil {
+		return nil, err
+	}
+	return u, err
+}
+
+// GetLoginUser get current user, alias of CurrentUser.
+func GetLoginUser() *user.User {
+	return GetCurrentUser()
+}
+
+// CurrentUser get current user.
+func GetCurrentUser() *user.User {
+	// check $HOME/.terminfo
+	u, err := user.Current()
+	if err != nil {
+		panic(err)
+	}
+	return u
+}
+
+// UserHomeDir get user home dir path.
+func UserHomeDir() string {
+	dir, _ := os.UserHomeDir()
+	return dir
+}
+
+// HomeDir get user home dir path, alias .
+func HomeDir() string {
+	dir, _ := os.UserHomeDir()
+	return dir
+}
+
+// UserDir will prepend user home dir to subPath
+func UserDir(subPath string) string {
+	dir, _ := os.UserHomeDir()
+
+	return dir + "/" + subPath
+}
+
+// UserCacheDir will prepend user `$HOME/.cache` to subPath
+func UserCacheDir(subPath string) string {
+	dir, _ := os.UserHomeDir()
+
+	return dir + "/.cache/" + subPath
+}
+
+// UserConfigDir will prepend user `$HOME/.config` to subPath
+func UserConfigDir(subPath string) string {
+	dir, _ := os.UserHomeDir()
+
+	return dir + "/.config/" + subPath
+}
+
+// Hostname is alias of os.Hostname, but ignore error
+func Hostname() string {
+	name, _ := os.Hostname()
+	return name
+}
+
+var curShell string
+
+// CurrentShell get current used shell env file.
+// eg "/bin/zsh" "/bin/bash".
+// if onlyName=true, will return "zsh", "bash"
+func CurrentShell(onlyName bool) (path string) {
+	var err error
+	if curShell == "" {
+		path, err = RunCmd("echo $SHELL", "/tmp")
+		if err != nil {
+			return ""
+		}
+
+		path = strings.TrimSpace(path)
+		// cache result
+		curShell = path
+	} else {
+		path = curShell
+	}
+
+	if onlyName && len(path) > 0 {
+		path = filepath.Base(path)
+	}
+	return
+}
+
+// Workdir get
+func Workdir() string {
+	dir, _ := os.Getwd()
+	return dir
 }
