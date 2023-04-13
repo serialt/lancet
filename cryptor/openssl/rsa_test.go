@@ -2,8 +2,9 @@ package openssl
 
 import (
 	"fmt"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/serialt/lancet/internal"
 )
 
 var (
@@ -27,30 +28,34 @@ func TestRsa_VerifyKeyPair(t *testing.T) {
 	publicKey1, privateKey1 = RSA.GenKeyPair(PKCS1, 1024)
 	publicKey8, privateKey8 = RSA.GenKeyPair(PKCS8, 2048)
 
-	assert.Equal(t, true, RSA.VerifyKeyPair(publicKey1, privateKey1))
-	assert.Equal(t, true, RSA.VerifyKeyPair(publicKey8, privateKey8))
-	assert.Equal(t, false, RSA.VerifyKeyPair(publicKey1, privateKey8))
-	assert.Equal(t, false, RSA.VerifyKeyPair(publicKey8, privateKey1))
-	assert.Equal(t, false, RSA.VerifyKeyPair(publicKey1, []byte("xxx")))
-	assert.Equal(t, false, RSA.VerifyKeyPair([]byte("xxx"), privateKey1))
+	assert := internal.NewAssert(t, "TestRsa_VerifyKeyPair")
+
+	assert.Equal(true, RSA.VerifyKeyPair(publicKey1, privateKey1))
+	assert.Equal(true, RSA.VerifyKeyPair(publicKey8, privateKey8))
+	assert.Equal(false, RSA.VerifyKeyPair(publicKey1, privateKey8))
+	assert.Equal(false, RSA.VerifyKeyPair(publicKey8, privateKey1))
+	assert.Equal(false, RSA.VerifyKeyPair(publicKey1, []byte("xxx")))
+	assert.Equal(false, RSA.VerifyKeyPair([]byte("xxx"), privateKey1))
 }
 
 func TestRsa_IsPublicKey(t *testing.T) {
 	publicKey1, privateKey1 = RSA.GenKeyPair(PKCS1, 1024)
 	publicKey8, privateKey8 = RSA.GenKeyPair(PKCS8, 2048)
 
-	assert.Equal(t, true, RSA.IsPublicKey(publicKey1))
-	assert.Equal(t, true, RSA.IsPrivateKey(privateKey1))
-	assert.Equal(t, false, RSA.IsPublicKey(privateKey1))
-	assert.Equal(t, false, RSA.IsPrivateKey(publicKey1))
+	assert := internal.NewAssert(t, "TestRsa_IsPublicKey")
 
-	assert.Equal(t, true, RSA.IsPublicKey(publicKey8))
-	assert.Equal(t, true, RSA.IsPrivateKey(privateKey8))
-	assert.Equal(t, false, RSA.IsPublicKey(privateKey8))
-	assert.Equal(t, false, RSA.IsPrivateKey(publicKey8))
+	assert.Equal(true, RSA.IsPublicKey(publicKey1))
+	assert.Equal(true, RSA.IsPrivateKey(privateKey1))
+	assert.Equal(false, RSA.IsPublicKey(privateKey1))
+	assert.Equal(false, RSA.IsPrivateKey(publicKey1))
 
-	assert.Equal(t, false, RSA.IsPublicKey([]byte("xxx")))
-	assert.Equal(t, false, RSA.IsPrivateKey([]byte("xxx")))
+	assert.Equal(true, RSA.IsPublicKey(publicKey8))
+	assert.Equal(true, RSA.IsPrivateKey(privateKey8))
+	assert.Equal(false, RSA.IsPublicKey(privateKey8))
+	assert.Equal(false, RSA.IsPrivateKey(publicKey8))
+
+	assert.Equal(false, RSA.IsPublicKey([]byte("xxx")))
+	assert.Equal(false, RSA.IsPrivateKey([]byte("xxx")))
 }
 
 func TestRsa_FormatPublicKey(t *testing.T) {
@@ -73,30 +78,34 @@ func TestRsa_ParsePublicKey(t *testing.T) {
 	publicKey1, privateKey1 = RSA.GenKeyPair(PKCS1, 1024)
 	publicKey8, privateKey8 = RSA.GenKeyPair(PKCS8, 2048)
 
+	assert := internal.NewAssert(t, "TestRsa_ParsePublicKey")
+
 	pub1, err1 := RSA.ParsePublicKey(publicKey1)
-	assert.Nil(t, err1)
+	assert.IsNil(err1)
 	pri1, err1 := RSA.ParsePrivateKey(privateKey1)
-	assert.Nil(t, err1)
-	assert.Equal(t, pub1, &pri1.PublicKey)
+	assert.IsNil(err1)
+	assert.Equal(pub1, &pri1.PublicKey)
 
 	pub8, err8 := RSA.ParsePublicKey(publicKey8)
-	assert.Nil(t, err8)
+	assert.IsNil(err8)
 	pri8, err8 := RSA.ParsePrivateKey(privateKey8)
-	assert.Nil(t, err8)
-	assert.Equal(t, pub8, &pri8.PublicKey)
+	assert.IsNil(err8)
+	assert.Equal(pub8, &pri8.PublicKey)
 }
 
 func TestRsa_ExportPublicKey(t *testing.T) {
 	publicKey1, privateKey1 = RSA.GenKeyPair(PKCS1, 1024)
 	publicKey8, privateKey8 = RSA.GenKeyPair(PKCS8, 2048)
 
+	assert := internal.NewAssert(t, "TestRsa_ExportPublicKey")
+
 	actual1, err1 := RSA.ExportPublicKey(privateKey1)
-	assert.Nil(t, err1)
-	assert.Equal(t, publicKey1, actual1)
+	assert.IsNil(err1)
+	assert.Equal(publicKey1, actual1)
 
 	actual8, err8 := RSA.ExportPublicKey(privateKey8)
-	assert.Nil(t, err8)
-	assert.Equal(t, publicKey8, actual8)
+	assert.IsNil(err8)
+	assert.Equal(publicKey8, actual8)
 }
 
 func TestRsa_CompressKey(t *testing.T) {
@@ -105,7 +114,10 @@ MIGJAoGBAK12MTd84qkCZzp4iLUj8YSUglaFMsFlv9KlIL4+Xts40PK3+wbsXPEw
 cujGeUmdgMeZiK7SLLSz8QeE0v7Vs+cGK4Bs4qLtMGCiO6wEuyt10KsafTyBktFn
 dk/+gBLr7B/b+9+HaMIIoJUdsFksdAg3cxTSpwVApe98loFNRfqDAgMBAAE=
 -----END RSA PUBLIC KEY-----`))
-	assert.Nil(t, err)
+
+	assert := internal.NewAssert(t, "TestRsa_CompressKey")
+
+	assert.IsNil(err)
 	fmt.Printf("压缩后的密钥：\n%s\n", string(key))
 }
 
@@ -113,66 +125,76 @@ func TestError_ParsePublicKey(t *testing.T) {
 	publicKey1, privateKey1 = RSA.GenKeyPair(PKCS1, 1024)
 	publicKey8, privateKey8 = RSA.GenKeyPair(PKCS8, 2048)
 
+	assert := internal.NewAssert(t, "TestError_ParsePublicKey")
+
 	_, err := RSA.ParsePublicKey(privateKey1)
-	assert.Equal(t, invalidRsaPublicKeyError(), err)
+	assert.Equal(invalidRsaPublicKeyError(), err)
 
 	_, err = RSA.ParsePublicKey(privateKey8)
-	assert.Equal(t, invalidRsaPublicKeyError(), err)
+	assert.Equal(invalidRsaPublicKeyError(), err)
 
 	_, err = RSA.ParsePublicKey([]byte("xxx"))
-	assert.Equal(t, invalidRsaPublicKeyError(), err)
+	assert.Equal(invalidRsaPublicKeyError(), err)
 
 	_, err = RSA.ParsePublicKey([]byte(`-----BEGIN RSA PUBLIC KEY-----
 xxxx
 -----END RSA PUBLIC KEY-----`))
-	assert.Equal(t, invalidRsaPublicKeyError(), err)
+	assert.Equal(invalidRsaPublicKeyError(), err)
 
 	_, err = RSA.ParsePublicKey([]byte(`-----BEGIN PUBLIC KEY-----
 xxxx
 -----END PUBLIC KEY-----`))
-	assert.Equal(t, invalidRsaPublicKeyError(), err)
+	assert.Equal(invalidRsaPublicKeyError(), err)
 }
 
 func TestError_ParsePrivateKey(t *testing.T) {
 	publicKey1, privateKey1 = RSA.GenKeyPair(PKCS1, 1024)
 	publicKey8, privateKey8 = RSA.GenKeyPair(PKCS8, 2048)
 
+	assert := internal.NewAssert(t, "TestError_ParsePrivateKey")
+
 	_, err := RSA.ParsePrivateKey(publicKey1)
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 
 	_, err = RSA.ParsePrivateKey(publicKey8)
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 
 	_, err = RSA.ParsePrivateKey([]byte("xxx"))
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 
 	_, err = RSA.ParsePrivateKey([]byte(`-----BEGIN RSA PRIVATE KEY-----
 xxxx
 -----END RSA PRIVATE KEY-----`))
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 
 	_, err = RSA.ParsePrivateKey([]byte(`-----BEGIN PRIVATE KEY-----
 xxxx
 -----END PRIVATE KEY-----`))
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 }
 
 func TestError_ExportPublicKey(t *testing.T) {
+
+	assert := internal.NewAssert(t, "TestError_ExportPublicKey")
+
 	_, err := RSA.ExportPublicKey([]byte("xxx"))
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 
 	_, err = RSA.ExportPublicKey([]byte(`-----BEGIN RSA PUBLIC KEY-----
 xxxx
 -----END RSA PUBLIC KEY-----`))
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 
 	_, err = RSA.ExportPublicKey([]byte(`-----BEGIN PUBLIC KEY-----
 xxxx
 -----END PUBLIC KEY-----`))
-	assert.Equal(t, invalidRSAPrivateKeyError(), err)
+	assert.Equal(invalidRSAPrivateKeyError(), err)
 }
 
 func TestError_CompressKey(t *testing.T) {
+
+	assert := internal.NewAssert(t, "TestError_CompressKey")
+
 	_, err := RSA.CompressKey([]byte("xxx"))
-	assert.Equal(t, invalidRSAKeyError(), err)
+	assert.Equal(invalidRSAKeyError(), err)
 }
