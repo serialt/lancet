@@ -90,6 +90,16 @@ func GetNowDateTime() string {
 	return time.Now().Format("2006-01-02 15:04:05")
 }
 
+// GetNowDateTimestampV1 获取当前时间的 年月日时分秒 字符串
+func GetNowDateTimestampV1() string {
+	return time.Now().Format("20060102150405")
+}
+
+// GetNowDateTimestampV2 获取当前时间的 年月日时分 字符串
+func GetNowDateTimestampV2() string {
+	return time.Now().Format("200601021504")
+}
+
 // GetZeroHourTimestamp return timestamp of zero hour (timestamp of 00:00).
 // Play: https://go.dev/play/p/QmL2oIaGE3q
 func GetZeroHourTimestamp() int64 {
