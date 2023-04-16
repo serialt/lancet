@@ -81,7 +81,7 @@ func CompareOsEnv(key, comparedEnv string) bool {
 // in linux,  use /bin/bash -c to execute command
 // in windows, use powershell.exe to execute command
 // Play: https://go.dev/play/p/n-2fLyZef-4
-func ExecCommand(command string) (stdout, stderr string, err error) {
+func ExecCommand(command string, workDir ...string) (stdout, stderr string, err error) {
 	var out bytes.Buffer
 	var errOut bytes.Buffer
 
@@ -89,6 +89,11 @@ func ExecCommand(command string) (stdout, stderr string, err error) {
 	if IsWindows() {
 		cmd = exec.Command("powershell.exe", command)
 	}
+
+	if len(workDir) > 0 {
+		cmd.Dir = workDir[0]
+	}
+
 	cmd.Stdout = &out
 	cmd.Stderr = &errOut
 
