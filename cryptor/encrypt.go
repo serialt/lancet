@@ -14,6 +14,7 @@ import (
 	"crypto/rand"
 	"crypto/rsa"
 	"crypto/x509"
+	"encoding/base64"
 	"encoding/pem"
 	"io"
 	"os"
@@ -90,6 +91,14 @@ func AesCbcEncrypt(data, key []byte) []byte {
 	return encrypted
 }
 
+// AesCbcEncryptBase64  decrypt data with key use AES CBC base64 algorithm
+// len(key) should be 16, 24 or 32.
+func AesCbcEncryptBase64(data, key string) string {
+	_data := AesCbcEncrypt([]byte(data), []byte(key))
+	return base64.StdEncoding.EncodeToString(_data)
+
+}
+
 // AesCbcDecrypt decrypt data with key use AES CBC algorithm
 // len(key) should be 16, 24 or 32.
 // Play: https://go.dev/play/p/IOq_g8_lKZD
@@ -104,6 +113,15 @@ func AesCbcDecrypt(encrypted, key []byte) []byte {
 
 	decrypted := pkcs7UnPadding(encrypted)
 	return decrypted
+}
+
+// AesCbcDecryptBase64 decrypt data with key use AES CBC algorithm
+// len(key) should be 16, 24 or 32.
+func AesCbcDecryptBase64(encrypted, key string) string {
+	_data, _ := base64.StdEncoding.DecodeString(encrypted)
+
+	tmpByte := AesCbcDecrypt(_data, []byte(key))
+	return string(tmpByte)
 }
 
 // AesCtrCrypt encrypt data with key use AES CTR algorithm
@@ -143,6 +161,14 @@ func AesCfbEncrypt(data, key []byte) []byte {
 	return encrypted
 }
 
+// AesCfbEncryptBase64 encrypt data with key use AES CFB algorithm
+// len(key) should be 16, 24 or 32.
+func AesCfbEncryptBase64(data, key string) string {
+	_data := AesCfbEncrypt([]byte(data), []byte(key))
+	return base64.StdEncoding.EncodeToString(_data)
+
+}
+
 // AesCfbDecrypt decrypt data with key use AES CFB algorithm
 // len(encrypted) should be great than 16, len(key) should be 16, 24 or 32.
 // Play: https://go.dev/play/p/tfkF10B13kH
@@ -160,6 +186,15 @@ func AesCfbDecrypt(encrypted, key []byte) []byte {
 	stream.XORKeyStream(encrypted, encrypted)
 
 	return encrypted
+}
+
+// AesCfbDecryptBase64  decrypt data with key use AES CFB algorithm
+// len(encrypted) should be great than 16, len(key) should be 16, 24 or 32.
+func AesCfbDecryptBase64(encrypted, key string) string {
+	_data, _ := base64.StdEncoding.DecodeString(encrypted)
+
+	tmpByte := AesCfbDecrypt(_data, []byte(key))
+	return string(tmpByte)
 }
 
 // AesOfbEncrypt encrypt data with key use AES OFB algorithm
@@ -184,6 +219,14 @@ func AesOfbEncrypt(data, key []byte) []byte {
 	return encrypted
 }
 
+// AesOfbEncryptBase64  encrypt data with key use AES OFB algorithm
+// len(key) should be 16, 24 or 32.
+func AesOfbEncryptBase64(data, key string) string {
+	_data := AesOfbEncrypt([]byte(data), []byte(key))
+	return base64.StdEncoding.EncodeToString(_data)
+
+}
+
 // AesOfbDecrypt decrypt data with key use AES OFB algorithm
 // len(key) should be 16, 24 or 32.
 // Play: https://go.dev/play/p/VtHxtkUj-3F
@@ -206,6 +249,15 @@ func AesOfbDecrypt(data, key []byte) []byte {
 	decrypted = pkcs7UnPadding(decrypted)
 
 	return decrypted
+}
+
+// AesOfbDecryptBase64 decrypt data with key use AES OFB algorithm
+// len(key) should be 16, 24 or 32.
+func AesOfbDecryptBase64(encrypted, key string) string {
+	_data, _ := base64.StdEncoding.DecodeString(encrypted)
+
+	tmpByte := AesOfbDecrypt(_data, []byte(key))
+	return string(tmpByte)
 }
 
 // DesEcbEncrypt encrypt data with key use DES ECB algorithm
